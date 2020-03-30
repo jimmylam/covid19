@@ -1,0 +1,7 @@
+Django==3.0.4
+djangorestframework==3.11.0
+ipython==7.13.0
+pylint==2.4.4
+pylint-django==2.0.13
+pylint-plugin-utils==0.6
+pytz==2019.3
