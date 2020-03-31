@@ -15,7 +15,15 @@ Install `virtualenv` and `virtualenvwrapper` for project management
 
 #### `sudo pip3 install virtualenv virtualenvwrapper` 
 
-Following the post-install instruction to setup the wrapper script to auto run on starting terminal window
+Following the post-install instruction to setup the wrapper script to auto run on starting terminal window. If there is no post-install instructions, on mac you can add this to your bash_profile: 
+
+```
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+```
+
+Also, you may need to set VIRTUALENVWRAPPER_PYTHON= to the location of your python binary.
 
 You are ready to create a virtual env for this project now. Let's call it `covid19`
 
