@@ -72,6 +72,33 @@ You are ready to code!!
 
 Read [Django tutorial here](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
+## Making change to model or pulling in change to model
+
+If you make any change to any model, or pull in any change to model, remember to run migration, so that migraiton files are generated accordingly. 
+
+#### `python manage.py migrate`
+
+If you create a brand new app, use the following to create the first migration
+
+#### `python manage.py makemigrations`
+
+You can also view the current migration status for all the app
+
+#### `python manage.py showmigrations`
+
+
+## Access local admin
+
+First, create the local admin account 
+
+#### `python manage.py createsuperuser`
+
+and follow the prompts.  You may use any easy to remember username / password.  This is your local admin account only.
+
+Start Django dev server again if it's not up already (`python manage.py runserver`)
+
+Go to browser `http://localhost:8000/admin`, and you should see the login page. 
+
 
 
 
